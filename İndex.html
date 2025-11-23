@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>GMT Motosiklet | İstanbul Tamir, Bakım ve Yol Yardım Servisi</title>
+    <meta name="description" content="GMT Motosiklet: 7/24 Acil yol yardım, lastik değişimi, periyodik bakım ve tamir hizmetleri. En iyi fiyat, garantili işçilik. Hemen arayın: 0552 506 83 81">
+    <meta name="keywords" content="motosiklet tamiri, motosiklet lastik değişimi, motosiklet yol yardım, motor bakımı, istanbul motosiklet servisi, acil motor çekici, gmt motosiklet">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="GMT Motosiklet">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MotorcycleRepair",
+      "name": "GMT Motosiklet",
+      "image": "https://images.unsplash.com/photo-1558981403-c5f9899a28bc",
+      "telephone": "+905525068381",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "İstanbul",
+        "addressCountry": "TR"
+      },
+      "priceRange": "₺₺",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      }
+    }
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* TASARIM STİLLERİ (DARK THEME) */
+        :root {
+            --primary: #ff6600; /* Turuncu - Enerjik Renk */
+            --dark-bg: #121212; /* Derin Siyah */
+            --card-bg: #1e1e1e;
+            --text-light: #e0e0e0;
+            --whatsapp: #25D366;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Roboto', sans-serif; }
+        
+        body { background-color: var(--dark-bg); color: var(--text-light); line-height: 1.6; }
+        
+        a { text-decoration: none; color: inherit; transition: 0.3s; }
+        
+        /* HEADER */
+        header {
+            background: rgba(0,0,0,0.9);
+            padding: 15px 5%;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid var(--primary);
+        }
+        
+        .logo { font-size: 1.5rem; font-weight: 900; letter-spacing: 1px; color: #fff; }
+        .logo span { color: var(--primary); }
+        
+        .call-btn {
+            background: var(--primary);
+            color: #fff;
+            padding: 8px 20px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            height: 85vh;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 20px;
+            margin-top: 60px;
+        }
+        
+        .hero h1 { font-size: 2.8rem; margin-bottom: 20px; text-transform: uppercase; line-height: 1.2; }
+        .hero p { font-size: 1.2rem; margin-bottom: 30px; max-width: 700px; color: #ccc; }
+        
+        .hero-btns a {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        
+        .btn-call { background: var(--primary); color: #fff; }
+        .btn-wa { background: var(--whatsapp); color: #fff; }
+
+        /* HİZMETLER */
+        .section { padding: 60px 5%; }
+        .section-title { text-align: center; font-size: 2rem; margin-bottom: 40px; color: var(--primary); }
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 10px;
+            border-left: 5px solid var(--primary);
+            transition: 0.3s;
+        }
+        .card:hover { transform: translateY(-5px); background: #252525; }
+        .card i { font-size: 2.5rem; color: var(--primary); margin-bottom: 15px; }
+        .card h3 { margin-bottom: 10px; color: #fff; }
+
+        /* SEO MAKALELERİ ALANI */
+        .seo-content { background: #1a1a1a; }
+        .article-box {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #333;
+        }
+        .article-box h2 { font-size: 1.4rem; color: #fff; margin-bottom: 10px; }
+        .article-box p { font-size: 0.95rem; color: #bbb; }
+
+        /* ETİKET BULUTU (TAGS) */
+        .tags-container { text-align: center; margin-top: 20px; }
+        .tag {
+            display: inline-block;
+            background: #333;
+            color: #aaa;
+            padding: 5px 10px;
+            margin: 5px;
+            border-radius: 3px;
+            font-size: 0.8rem;
+        }
+
+        /* FOOTER & SABİT BUTON */
+        footer { background: #000; padding: 40px 5%; text-align: center; font-size: 0.9rem; color: #777; }
+        
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--whatsapp);
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 35px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+            40% {transform: translateY(-10px);}
+            60% {transform: translateY(-5px);}
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">GMT <span>MOTO</span></div>
+        <a href="tel:+905525068381" class="call-btn"><i class="fa fa-phone"></i> ARA</a>
+    </header>
+
+    <section class="hero">
+        <div>
+            <h1>Profesyonel Motosiklet Servisi</h1>
+            <p>Yolda kalmak yok! İstanbul'un her noktasına 7/24 acil yol yardım, tamir ve bakım hizmeti. GMT Motosiklet güvencesiyle sürüş keyfiniz bölünmesin.</p>
+            <div class="hero-btns">
+                <a href="tel:+905525068381" class="btn-call">Hemen Ara: 0552 506 83 81</a>
+                <a href="https://wa.me/905525068381" class="btn-wa"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">Hizmetlerimiz</h2>
+        <div class="grid-container">
+            <article class="card">
+                <i class="fa-solid fa-wrench"></i>
+                <h3>Tamir ve Bakım</h3>
+                <p>Motor bloğu, şanzıman, varyatör bakımı ve elektrik tesisatı onarımı. Tüm marka ve modellerde uzman işçilik.</p>
+            </article>
+            <article class="card">
+                <i class="fa-solid fa-motorcycle"></i>
+                <h3>Lastik Değişimi</h3>
+                <p>Michelin, Pirelli, Anlas gibi markaların değişimi ve balans ayarı. Lastik tamiri ve fitil atma işlemleri.</p>
+            </article>
+            <article class="card">
+                <i class="fa-solid fa-truck-tow"></i>
+                <h3>7/24 Yol Yardım</h3>
+                <p>Lastiğiniz mi patladı? Akünüz mü bitti? Konumunuza en yakın motosiklet çekici ekibimiz hemen yola çıkar.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="section seo-content">
+        <h2 class="section-title">Motosiklet Bakım Rehberi</h2>
+        
+        <div class="grid-container">
+            <article class="article-box">
+                <h2>Motosiklet Lastik Ömrü Ne Kadardır?</h2>
+                <p>Motosiklet lastikleri, sürüş güvenliği için en kritik parçadır. Ortalama lastik ömrü 10.000 - 15.000 km arasındadır, ancak lastik diş derinliği 2mm altına düştüğünde veya 5 yılı doldurduğunda mutlaka değiştirilmelidir. GMT Motosiklet olarak lastik basınç kontrollerinizi düzenli yapmanızı öneriyoruz.</p>
+            </article>
+
+            <article class="article-box">
+                <h2>Periyodik Bakımın Önemi ve Yağ Değişimi</h2>
+                <p>Motor ömrünü uzatmak için her 2.000 - 3.000 km'de bir yağ değişimi şarttır. Kirli yağ, motor içinde aşınmaya neden olur. Servisimizde Castrol, Motul gibi kaliteli yağlar kullanılarak filtre temizliği ve genel kontroller titizlikle yapılır.</p>
+            </article>
+
+            <article class="article-box">
+                <h2>Yolda Kaldığınızda Ne Yapmalısınız?</h2>
+                <p>Motosikletiniz arızalandığında güvenli bir yere çekin ve dörtlülerinizi yakın. Profesyonel ekipman olmadan müdahale etmek daha büyük sorunlara yol açabilir. 0552 506 83 81 numaralı GMT Motosiklet Yol Yardım hattımızı arayarak konumunuzu paylaşmanız yeterlidir.</p>
+            </article>
+        </div>
+
+        <div class="tags-container">
+            <h3>Popüler Aramalar</h3>
+            <span class="tag">Motosiklet Tamiri</span>
+            <span class="tag">Acil Yol Yardım</span>
+            <span class="tag">Motor Lastikçisi</span>
+            <span class="tag">Scooter Bakımı</span>
+            <span class="tag">Yamaha Servis</span>
+            <span class="tag">Honda Bakım</span>
+            <span class="tag">7/24 Çekici</span>
+            <span class="tag">Motor Yağ Değişimi</span>
+            <span class="tag">Akü Takviye</span>
+            <span class="tag">İstanbul Motorcu</span>
+            <span class="tag">GMT Motosiklet</span>
+        </div>
+    </section>
+
+    <footer>
+        <p>GMT Motosiklet - Profesyonel Çözümler</p>
+        <p style="margin-top:10px;"><i class="fa fa-map-marker"></i> İstanbul / Türkiye</p>
+        <p style="margin-top:10px; font-size: 0.8rem;">Copyright © 2025. Tüm Hakları Saklıdır.</p>
+    </footer>
+
+    <a href="https://wa.me/905525068381?text=Merhaba,%20yolda%20kaldım%20yardımcı%20olur%20musunuz?" class="whatsapp-float" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+</body>
+</html>
